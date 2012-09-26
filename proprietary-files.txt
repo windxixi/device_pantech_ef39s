@@ -9,18 +9,36 @@ bin/qcks
 bin/time_daemon
 bin/usb_serial_write
 bin/usb_manager
-
+bin/qseecomd
+bin/wiperiface
+bin/thermald
+bin/skypd
 # Add device specific blobs here
 # NFC
+vendor/firmware/libpn544_fw.so
+#gps
+lib/libloc_adapter.so
+lib/libloc_eng.so
+#camera
+lib/libOlaEngine.so
+lib/libcamera_client.so
 
-
+lib/libcpmgrjni.so
+lib/libcp-proccmd.so
+lib/libdrmfs.so
+lib/libdsucsdappif_apis_fusion.so
+lib/libpbmlib_fusion.so
+lib/libQSEEComAPI.so
 #Ril
+bin/ks
+bin/qcks
 lib/libdsm.so
 lib/libnv.so
 lib/liboem_rapi_fusion.so
 #egl
 lib/egl/libGLESv2S3D_adreno200.so
 lib/libsc-a2xx.so
+lib/libsc-a3xx.so
 #gps
 lib/libgps.so
 lib/libgps.utils.so
@@ -35,13 +53,16 @@ lib/liboem_rapi_fusion.so
 lib/libqdi.so
 lib/libqsap_sdk.so
 lib/libril.so
-lib/libsc-a2xx.so
 lib/libsky_rawdata.so
 lib/libskytestclient.so
 lib/libuca-ril-qmi.so
 lib/libxml.so
+lib/libthermal_mitigation.so
+lib/libthermal_mitigation_fusion.so
+lib/libtime_remote_atom.so
 # Wi-Fi
 etc/wifi/wpa_supplicant.conf
+etc/wifi/nv_bcmdhd.txt
 vendor/firmware/fw_bcm4330_mfg_b2.bin
 vendor/firmware/fw_bcmdhd.bin
 vendor/firmware/fw_bcmdhd_apsta.bin

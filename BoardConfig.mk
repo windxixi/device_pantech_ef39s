@@ -24,7 +24,6 @@
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
 USE_CAMERA_STUB := true
-BOARD_PROVIDES_LIBRIL := true
 # inherit from common msm8660
 -include device/pantech/msm8660-common/BoardConfigCommon.mk
 
@@ -52,15 +51,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 629145600
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1073741824
 BOARD_FLASH_BLOCK_SIZE             := 131072
 
-BOARD_USES_GENLOCK           := true
-#BOARD_USE_LEGACY_TOUCHSCREEN := true
-#BOARD_USE_LEGACY_TRACKPAD := true
-
-# FIXME: needs to be disabled for camera preview to work correctly
-TARGET_QCOM_HDMI_OUT := true
-
-# Workaround for glitches while cropping bypass layers
-#TARGET_NO_BYPASS_CROPPING := true
 
 # Audio
 TARGET_USES_QCOM_LPA := true
