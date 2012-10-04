@@ -26,7 +26,7 @@
 USE_CAMERA_STUB := true
 # inherit from common msm8660
 -include device/pantech/msm8660-common/BoardConfigCommon.mk
-
+BOARD_PROVIDES_LIBRIL := true
 # inherit from the proprietary version
 -include vendor/pantech/ef39s/BoardConfigVendor.mk
 

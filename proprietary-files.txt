@@ -3,7 +3,6 @@ bin/battery_charging
 bin/cnd
 bin/cpmgrif
 bin/geomagneticd
-bin/hdmid
 bin/pam_server
 bin/qcks
 bin/time_daemon
